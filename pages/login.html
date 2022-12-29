@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactanos">
+    <script src="https://kit.fontawesome.com/17a4d9633d.js" crossorigin="anonymous"></script>
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../style/estilo.css">
+</head>
+<body>
+    <header>
+        <div class="parteSuperior">
+            <div class="logo" id="logo">
+                <img src="../img/logos/logoEmpresa.webp" alt="Logo">
+            </div>
+        </div>
+
+        <div class="containerMenu">
+            <div class="menu">
+                <input type="checkbox" id="check-menu">
+                <label id="label__check" for="check-menu">
+                    <i class="fa-solid fa-house iconMenu"></i>
+                </label>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="../index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="./servicios.html">Servicios</a>
+                            <ul>
+                                <li><a href="./carteles.html">Carteles</a></li>
+                                <li><a href="./marquesina.html">Marquesina</a></li>
+                                <li><a href="./corporeos.html">Corporeos</a></li>
+                                <li><a href="./toldos.html">Todoldos</a></li>
+                                <li><a href="./vinilos.html">Vinilos</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./galeria.html">Galeria</a>
+                        </li>
+                        <li>
+                            <a href="./contacto.html">Contacto</a>
+                        </li>
+                        <li>
+                            <a href="./login.html">login</a>
+                        </li>
+                        <li>
+                            <button id="cerrar-sesion">Cerrrar Sesion</button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section id="sesion">
+        <div class="cuerpo-login">
+            <h2>
+                Incio de Sesion
+            </h2>
+            <form id="inicio-form">
+                <input type="text"  id="input-user"  placeholder="Nombre">
+                <input type="text"  id="password" placeholder="Contraseña" />
+                <input type="submit" value="Inciar Sesion" id="boton">
+                <p id="logout">
+                    El usuario o la password son incorrectos.
+                </p>
+            </form>
+        </div>
+    </section>
+    <script src="login.js"></script>
+    </body>

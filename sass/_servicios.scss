@@ -1,0 +1,81 @@
+#hero__servicios{
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../img/backwep/fondoServicio.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 20px;
+    .hero__titulo-servicios{
+        .titulo-servicios{
+            @media(max-width:860px){
+                font-size: 2rem;
+            }
+            @media(max-width:450px){
+                font-size: 1.8rem;
+            }
+        }
+        .servicios-p{
+            color: $colorHover;
+            background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        );
+        @media(max-width:860px){
+            font-size: 1.2rem;
+        }
+        @media(max-width:450px){
+            font-size: 1rem;
+        }
+        }
+    }
+}
+
+.card-group{
+    padding: 20px;
+    .card{
+        margin: 10px 10px;
+        transition: all 300ms ease;
+        @media(max-width:1010px){
+            min-width: 300px;
+        }
+        @media(max-width:360px){
+            min-width: 200px;
+        }
+        &:hover{
+            transform: translateY(-5px);
+            box-shadow: 1px 5px 20px;
+        }
+        .card-img-top{
+            width: 100%;
+            height: 170px;
+        }
+        .card-body{
+            background: $colorHeaderfooter;
+            background: linear-gradient(0deg, $colorHeaderfooter 0%, rgba(255,255,255,1) 100%);
+            .card-text{
+                color: black;
+            }
+            .btn{
+                background-color: white;
+                transition: all 300ms ease;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
+
+
